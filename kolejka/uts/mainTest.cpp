@@ -149,3 +149,12 @@ TEST_F(QueueTest, WhenInsertTwoElementsAndNextToCopyQueueToAnotherQueueAndPopOne
     sut.pop();
     EXPECT_EQ(sut.size(), 1);
 }
+
+TEST_F(QueueTest, WhenAssignsQueueOneToTheOtherSizeTheOtherShouldReturnTwo)
+{
+    Queue que1({"haha", "ha"});
+    Queue que2;
+    que2 = que1;
+
+    EXPECT_EQ(que2.size(), 2);
+}

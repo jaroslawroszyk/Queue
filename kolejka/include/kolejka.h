@@ -16,7 +16,7 @@ public:
 
     Queue(Queue &&rhs) noexcept;
 
-//    Queue &operator=(const Queue &rhs);
+    Queue &operator=(const Queue &rhs);
 
     ~Queue();
 
@@ -27,7 +27,6 @@ public:
     auto size() -> int;
 
     auto pop() -> std::string;
-
 
 private:
     int capacity;
