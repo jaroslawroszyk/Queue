@@ -44,7 +44,7 @@ Queue &Queue::operator=(const Queue &rhs)
 {
     if (this == &rhs)
         return *this;
-    if (capacity != rhs.capacity and count != rhs.count) // czy begin -> begin != rhs.begin
+    if (capacity != rhs.capacity and count != rhs.count)
     {
         delete[]tab;
         tab = nullptr;
@@ -65,7 +65,7 @@ Queue::~Queue()
     delete[]tab;
 }
 
-auto Queue::insert(std::string str) -> void  // wstawiamy napis do tablicy stringow na ostatnie miejsce
+auto Queue::insert(std::string str) -> void
 {
     if (capacity <= count)
         throw std::out_of_range("capacity is to low");
@@ -74,7 +74,7 @@ auto Queue::insert(std::string str) -> void  // wstawiamy napis do tablicy strin
     ++count;
 }
 
-auto Queue::check() -> std::string  // zwracamy co znajduje sie na 1 miejscu w tablicy
+auto Queue::check() -> std::string
 {
     return tab[0];
 }
