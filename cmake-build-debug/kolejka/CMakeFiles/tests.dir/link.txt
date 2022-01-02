@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/tests.dir/uts/mainTest.cpp.o  -o tests  ../external/gtest/src/googletest-build/lib/libgmock_main.a ../external/gtest/src/googletest-build/lib/libgtest.a ../external/gtest/src/googletest-build/lib/libgmock.a libimplementations.a -lpthread 
