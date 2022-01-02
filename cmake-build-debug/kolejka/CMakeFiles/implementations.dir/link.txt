@@ -1,2 +1,0 @@
-/usr/bin/ar qc libimplementations.a  CMakeFiles/implementations.dir/src/kolejka.cpp.o
-/usr/bin/ranlib libimplementations.a
